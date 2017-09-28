@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>  $(jQuery(document).ready(function($) {
+        $("first-button").click(function(event){
+          $('.first-button').hide();
+            $('form').fadeIn(3000);
+        });
+    }));
+    </script>
+
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
       <meta charset="UTF-8">
     <title>title</title>
 <style>
-
 body {
   background: -webkit-linear-gradient(left, slateblue , violet);
 }
@@ -24,31 +31,62 @@ body {
   font-size: 110px;
 }
 
-p.outset {
+button:active {
+	transform: translate(0.1em,0.1em);
+	border: 0px;
+}
+button:visited{
+	border: 0px;
+}
+button:focus {
+  outline: 0;
+}
+
+.form {
+  opacity: 0.9;
+  background-color: white
+    padding: 20px 20px 20px 20px;
+    border: 1px solid red;
+    width:300px;
+    top:40%;
+    left:32%;
+    height:100px;
+    float:left;
+    position: absolute;
+    overflow: scroll;
+}
+
+.first-button {
   border-style: outset;
   color:white;
   background-color: #9370DB;
   margin-left: 375px;
   width:150px;
-  height:25px;
+  height:40px;
   padding: 5px 5px 5px 5px;
   text-align:center;
   line-height: 25px;
   text-transform: uppercase;
   letter-spacing: 5px;
+	cursor: pointer;
 }
 
-.bodytext {
-  position: relative;
-  border: 1px solid red;
-  width:300px;
-  margin-left:280px;
-  margin-top:0px;
-  height:100px;
-  float:left;
-  padding:20px 20px 20px 20px;
-  overflow: scroll;
+.final-button {
+  border-style: outset;
+  color:white;
+  background-color: #8FBC8F;
+  margin-left: 375px;
+  width:150px;
+  height:40px;
+  padding: 5px 5px 5px 5px;
+  text-align:center;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+	:hover
 }
+
 
   p {
     font-size:14px;
@@ -80,10 +118,12 @@ p.outset {
 <body>
   <div class="title" id="title">Bill of Rights</div><br>
 <div class="stripes">
-  <p class="outset"> Amendments</p>
+  <button class="first-button">Amendments</button>
 </div>
 
-      <div class="bodytext"><p><span id="initial">C</span>ongress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.<br><br>
+  <div class="div-form">
+    <form action="" method="" class="form">
+          <div class="bodytext"><p><span id="initial">C</span>ongress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.<br><br>
         <span id="initial">A</span> well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed.<br><br><br><br><br>
         <span id="initial">N</span>o soldier shall, in time of peace be quartered in any house, without the consent of the owner, nor in time of war, but in a manner to be prescribed by law.<br><br><br><br>
         <span id="initial">T</span>he right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no warrants shall issue, but upon probable cause, supported by oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.<br><br><br><br><br>
@@ -93,6 +133,10 @@ p.outset {
         <span id="initial">E</span>Excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted.<br><br><br><br><br>
         <span id="initial">T</span>he enumeration in the Constitution, of certain rights, shall not be construed to deny or disparage others retained by the people.<br><br><br><br><br>
         <span id="initial">T</span>he powers not delegated to the United States by the Constitution, nor prohibited by it to the states, are reserved to the states respectively, or to the people.<br>
+<button  class="final-button">Amendments</button>
 
+</div>
+</form>
+</div>
 </body>
 </html>
