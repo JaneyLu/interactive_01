@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(window).scroll(function(){
+    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
+/*win.scroll(function(){
+  scrollPosition = win.scrollTop();
+  scrollRatio = 1 - scrollPosition / 300;
+  $(".top").css("opacity", scrollRatio);
+*/
+
+
+
+
+
+/*$(window).scroll(function(){
+    var scrollVar = $(window).scrollTop();
+    $('.top').css("opacity", 1 - scrollVar/300);
+})*/
+
+
+
+
+</script>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+</head>
+  <style>
+  body {
+    margin: 0;
+    height: 1000px;
+  }
+
+  .top {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    background-color: #aaa;
+    height: 300px;
+    opacity: 1;
+    text-align: center;
+    font-family: 'helvetica';
+    font-size: 80px;
+    font-weight: 100;
+    color: #fff;
+  }
+
+  .title {
+    position: absolute;
+    top: 60%;
+    left: 100px;
+  }
+  </style>
+
+<body>
+  <div class="top"><div class="title">Fade Away</div></div>
+
+</body>
+</html>

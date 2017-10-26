@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+    $(window).scroll(function(){
+        $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+      });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet">
+</head>
+  <style>
+
+  .top {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    text-align: center;
+    font-size:40px;
+    line-height: 50px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 250px;
+    color:black;
+  }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.right{
+  float:right;
+  width:40%;
+}
+
+.left{
+  float:left;
+  width:40%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #664A75;
+}
+
+.container {
+position: relative;
+width: 20%;
+font-family: 'Playfair Display', serif;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: grey;
+  font-size: 9px;
+  line-height: 10px;
+  position: absolute;
+  width:60%;
+  top: 50%;
+  left: 50%;
+  font-family: 'Playfair Display', serif;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+  body{
+    background-color: beige;
+    color:black;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'VT323', monospace;
+  }
+
+
+  </style>
+
+<body>
+<div class="top"><div class="title">Is it more difficult to watch TV shows in China than in North Korea?
+</div></div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<section class="timeline">
+  <ul>
+    <li>
+      <div>
+        <time>1945</time>
+        Some content here
+      </div>
+    </li>
+
+    <!-- more list items here -->
+  </ul>
+</section>
+
+
+  <div class="left"><img src="Mao.pdf" alt="Mao" width=70% height=70%></div>
+
+  <div class="container">1945
+  <div class="overlay">
+    <div class="text">Mao started to rule China</div>
+  </div>
+</div>
+
+
+<img src="burning book_1.pdf" alt="burning book" width=25% height=25%>
+
+<div class="container">1967
+  <div class="overlay">
+    <div class="text">The Cultural Revolution</div>
+  </div>
+</div><br><br>
+
+
+<div class="left"><img src="usb_hand1.pdf" alt="usbhand" width=50% height=50%>
+
+<div class="right"><img src="escape.pdf" alt="escape" width=150% height=150%><br><br><br>
+
+<img src="balloons.pdf" alt="balloons" width=150% height=150%></div><br>
+
+
+
+</body>
+</html>

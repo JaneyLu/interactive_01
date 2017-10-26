@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Is watching TV shows in China becoming more difficult than in North korea?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+      <script src="function.js"></script>
+      <script src="function_1.js"></script>
+<script>
+      $(document).ready(function() {
+
+          $(".mao").on({
+            mouseenter : function() {
+              $(".mao").addClass("active");
+            },
+            mouseleave : function() {
+              $(".mao").removeClass("active");
+            }
+          });
+
+          $(".book").on({
+            mouseenter : function() {
+              $(".book").addClass("active");
+            },
+            mouseleave : function() {
+              $(".book").removeClass("active");
+            }
+          });
+
+          $(".Tiananmen").on({
+            mouseenter : function() {
+              $(".Tiananmen").addClass("active");
+            },
+            mouseleave : function() {
+              $(".Tiananmen").removeClass("active");
+            }
+          });
+
+          $(".Netflix").on({
+            mouseenter : function() {
+              $(".Netflix").addClass("active");
+            },
+            mouseleave : function() {
+              $(".Netflix").removeClass("active");
+            }
+          });
+
+          $(".balloons").on({
+            mouseenter : function() {
+              $(".balloons").addClass("active");
+            },
+            mouseleave : function() {
+              $(".balloons").removeClass("active");
+            }
+          });
+
+          $(".olympic").on({
+            mouseenter : function() {
+              $(".olympic").addClass("active");
+            },
+            mouseleave : function() {
+              $(".olympic").removeClass("active");
+            }
+          });
+
+
+      });</script>
+
+      <script>
+    $(window).scroll(function(){
+        $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+      });
+    </script>
+    <script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet">
+    <meta charset="UTF-8"></script>
+    <style>
+
+    *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 'Playfair Display', serif;
+  background: beige;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+
+/* INTRO SECTION AND BOTTOM STYLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.top {
+  margin: 0;
+  position: relative;
+  width: 100% 400px;
+  opacity: 0;
+  text-align: center;
+  font-size:40px;
+  font-family: 'Playfair Display', serif;
+  margin-top: 350px;
+  margin-bottom: 350px;
+  color:black;
+}
+
+.intro {
+  background: beige;
+  padding: 200px 0;
+  color:black;
+}
+
+.bottom{
+  background: beige;
+  padding: 200px 0;
+  color:black;
+  text-align: center;
+  font-size:40px;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  position: relative;
+  width: 100% 400px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul {
+  background: beige;
+  padding: 50px 0;
+  align-items: :center;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background: red;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+  color:red;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+  background: #664A75;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li.go-on-right div {
+  left: 45px;
+}
+
+.timeline ul li.go-on-right div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #664A75 transparent transparent ;
+}
+
+.timeline ul li.go-on-left div {
+  left: -339px;
+}
+
+.timeline ul li.go-on-left div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #664A75;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
+/* IMAGE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.image {
+  display: block;
+}
+
+.right{
+  float:right;
+  width:500px;
+  height:500px;
+  right:0px;
+  bottom:100px;
+  position:relative;
+  padding-bottom: 60px;
+}
+
+.left{
+  float:left;
+  width:500px;
+  height:500px;
+  margin:20px;
+  position:relative;
+  left:0px;
+  bottom:30px;
+}
+
+/* ANIMATION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mao img:nth-child(1) {
+  opacity:1;
+}
+.mao img:nth-child(2) {
+  opacity:0;
+}
+
+.book img:nth-child(1) {
+  opacity:1;
+}
+.book img:nth-child(2) {
+  opacity:0;
+}
+
+.Tiananmen img:nth-child(1) {
+  opacity:1;
+}
+.Tiananmen img:nth-child(2) {
+  opacity:0;
+}
+
+.Netflix img:nth-child(1) {
+  opacity:1;
+}
+.Netflix img:nth-child(2) {
+  opacity:0;
+}
+
+.balloons img:nth-child(1) {
+  opacity:1;
+}
+.balloons img:nth-child(2) {
+  opacity:0;
+}
+
+.active img:nth-child(1) {
+  -webkit-animation: blink2 1s infinite;/* Safari 4.0 - 8.0 */
+  animation: blink2 1s infinite;
+}
+
+.active img:nth-child(2) {
+  -webkit-animation: blink1 1s infinite; /* Safari 4.0 - 8.0 */
+  animation: blink1 1s infinite;
+}
+
+@-webkit-keyframes blink1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes blink2 {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.img-holder img {
+  position:relative;
+}
+
+.mao img:nth-child(1) {
+  position:absolute;
+}
+
+.book img:nth-child(1) {
+  position:absolute;
+}
+
+.Tiananmen img:nth-child(1) {
+  position:absolute;
+}
+
+.Netflix img:nth-child(1) {
+  position:absolute;
+}
+
+.balloons img:nth-child(1) {
+  position:absolute;
+}
+
+</style>
+
+    <title>title</title>
+  </head>
+  <body>
+<section class="intro">
+    <div class="top"><div class="container">
+      <h1>Is watching TV shows in China becoming more difficult than in North korea? <br>&darr;</h1>
+    </div></div>
+  </section>
+
+
+<section class="image">
+    <div class="left">
+        <div class="img-holder mao">
+          <img src="Mao_1.png" width=100% height=auto>
+          <img src="Mao_2.png" width=100% height=auto>
+        </div>
+        <div class="img-holder book">
+          <img src="burning book_1.png" width=100% height=auto>
+          <img src="burning book_2.png" width=100% height=auto>
+        </div>
+        <div class="img-holder Tiananmen">
+          <img src="Tiananmen_1.png" width=120% height=auto>
+          <img src="Tiananmen_2.png" width=120% height=auto>
+        </div>
+        <div class="img-holder olympic">
+          <img src="olympic_1.png" width=100% height=auto>
+          <img src="olympic_2.png" width=100% height=auto>
+          <img src="live_1.png" width=100% height=auto>
+          <img src="live_2.png" width=100% height=auto>
+        </div>
+        <div class="img-holder Netflix">
+          <img src="Netflix_1.png" width=100% height=auto>
+          <img src="Netflix_2.png" width=100% height=auto>
+        </div>
+      </div>
+
+    <div class="right">
+      <img src="escape.png" width=100% height=auto>
+      <img src="usb_hand1.png" width=100% height=auto>
+    <div class="img-holder balloons">
+      <img src="balloons_1.png" width=100% height=auto>
+      <img src="balloons_2.png" width=100% height=auto>
+    </div>
+      <img src="DVD_1.png" width=50% height=auto><br>
+      <img src="30%.png" width=100% height=auto>
+</div>
+  </section>
+
+    <section class="timeline">
+      <ul>
+        <li class="go-on-left">
+          <div>
+            <time>1945</time> Mao started to rule China.
+          </div>
+      </li>
+       <li class="go-on-left">
+         <div>
+           <time>1967</time>  The Cultural Revolution.<br>Foreign literature, art forms, religious works, symbols, and even artifacts of ancient Chinese culture were deemed "reactionary" and became targets for destruction.A lot of scholars and artists cannot sustain the cruel political environment and escaped to Taiwan. Those who stayed were either killed or silenced.
+         </div>
+     </li>
+     <li class="go-on-left">
+       <div>
+         <time>1989</time> Tiananmen Square Massacre.<br>The students started the protest, called for democracy, greater accountability, freedom of the press, and freedom of speech. But ended up troops with assault rifles and tanks killed at least several hundred demonstrators.
+       </div>
+     </li>
+     <li class="go-on-right">
+       <div>
+         <time>1995</time> Since the middle of 1990s, with the collapse of the Souviet Union, natural disaster such as floods and famine and also the overly strict political system, more than 2,000,000 people died in North Korea. Those whoe survived started to flee out of the country, or get connection with black market.
+       </div>
+     </li>
+     <li class="go-on-right">
+       <div>
+         People in North Korea mostly use Notetel to watch shows--which is a conbination of television and notebook, and could read USB. "USB is small, once if you were discovered, you can just swallow it."
+       </div>
+     </li>
+
+     <li class="go-on-right">
+       <div>
+         <time>2000</time> A DVD containing TV shows and movies of other countries could cost 3,000 North Korea Won, which could buy several pounds of rice. In this country, information is ectremely expensive.
+       </div>
+     </li>
+     <li class="go-on-left">
+       <div>
+         <time>2008</time> Summer Olympics in Beijing <br>During that time, all Chinese TV stations were ordered to delay live broadcasts by 10 seconds, a policy that was designed to give censors time to react in case free-Tibet demonstrators or others staged political protests.
+       </div>
+     </li>
+     <li class="go-on-right">
+       <div>
+         With the ongoing Information War between North Korea and South Korea, people keep sending baloons which hang chocolates, USBs and also DVDs on it. Those baloons will land on the ground of North Korea, and be discovered by someone happen to pick them up.
+       </div>
+     </li>
+     <li class="go-on-left">
+       <div>
+         <time>2017</time> In July 2017, Bilibili, one of the most popular video sites in China, removed most of American and British TV shows, and all foreign categories like "American drama" to comply with regulations. Netflix and other video websites where you could watch those shows, of course, are all banned by the new carried out policy.
+     </li>
+     <li class="go-on-right">
+       <div>
+         <time>2017</time> Nowadays, around 30% of North Korean know how the outside world is like. Once if there're 50% people get to know it, then people will be able to say out loud about what they need to change about their system.
+     </li>
+
+
+      </ul>
+    </section>
+    <br><br><br><br>
+<div class="bottom" >
+     Don't say "it is no big deal" when they took part of your rights; Don't let it go when you know it could only go worse but nowhere.
+ </div>
+  </body>
+</html>
