@@ -1,0 +1,343 @@
+
+.yel-box{
+  border: 1px solid #f7d577;
+  width:500px;
+  height:800px;
+}
+
+.blk-box{
+  border: 1px solid black;
+  width:480px;
+  height:800px;
+}
+
+.standard{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.text{
+  font-size: 15px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
+  margin-left: 100px
+}
+
+.italic{
+  font-style: italic;
+}
+
+.special{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.W-font{
+  color: white;
+}
+
+.G-font{
+  color: #666666;
+}
+
+.B-font{
+  color: black;
+}
+
+.LG-font{
+  color: #b3b3b3;
+}
+
+.center{
+  text-align: center;
+}
+
+.space{
+  letter-spacing: 10px;
+}
+
+.t-page{
+  font-size: 40px;
+}
+
+.subtitle{
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-left: 100px;
+  width:800px;
+}
+
+.top100{
+  margin-top: 100px;
+}
+
+.top-90{
+  margin-top: -90px;
+}
+
+.top300{
+  margin-top: 300px;
+}
+
+.top500{
+  margin-top: 500px;
+}
+
+.bottom320{
+  margin-bottom: 320px;
+}
+
+.bottom140{
+  margin-bottom: 140px;
+}
+
+.leftline{
+  width: 680px;
+}
+
+.rightline{
+  width:680px;
+  margin-left: 690px;
+  margin-right: 20px;
+}
+
+.text-mt{
+  margin-top: -630px;
+}
+
+.mg-left{
+  margin-left: 230px;
+}
+
+.mg-left1{
+  margin-left: 250px;
+}
+
+.mg-left2{
+  margin-left: 550px;
+}
+
+.center{
+  text-align: center;
+}
+
+.left-flow{
+  float: left;
+}
+
+.right-flow{
+  float: right;
+}
+
+.wine-pad{
+  padding-right:3px;
+}
+
+.rightmar{
+  margin-right: -480px;
+}
+
+.rightmar_2{
+  margin-right: -200px;
+}
+
+.topmar{
+  margin-top: -430px;
+}
+
+.rmargin{
+ margin-right: 100px;
+}
+
+.abso{
+  position: absolute;
+}
+
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+button:active {
+	transform: translate(0.1em,0.1em);
+	border: 0px;
+}
+button:visited{
+	border: 0px;
+}
+button:focus {
+  outline: 0;
+}
+
+.shop-button {
+  border-style: outset;
+  border-color: grey;
+  color:#666666;
+  background-color: white;
+  width:150px;
+  height:40px;
+  padding: 5px 5px 5px 5px;
+  text-align:center;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.pb-button {
+  border-style: outset;
+  border-color: white;
+  color:white;
+  background-color: transparent;
+  width:150px;
+  height:40px;
+  padding: 5px 5px 5px 5px;
+  text-align:center;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+#page-wrap {
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+p,
+ul,
+h1 {
+  margin: 0 0 1rem 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+  border-radius: 0 0 10px 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+#nav a {
+  display: block;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+#nav a:hover {
+  color: #ff0;
+}
+
+.section {
+  height: 1000px;
+}
+
+#section-1 {
+  background: white;
+}
+
+#section-2 {
+  background: white;
+}
+
+#section-3 {
+  background: white;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+}
+
+.section a {
+  color: #3399FF;
+}
