@@ -23,6 +23,12 @@
   margin-left: 100px
 }
 
+.text-1{
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
+}
+
 .italic{
   font-style: italic;
 }
@@ -80,7 +86,7 @@
 }
 
 .top300{
-  margin-top: 300px;
+  margin-top: 160px;
 }
 
 .top500{
@@ -88,11 +94,11 @@
 }
 
 .bottom320{
-  margin-bottom: 320px;
+  margin-bottom: 200px;
 }
 
-.bottom140{
-  margin-bottom: 140px;
+.bottom100{
+  margin-bottom: 100px;
 }
 
 .leftline{
@@ -180,7 +186,7 @@
 	font-size:12px;
 	line-height:32px;
 	padding:0 15px;
-	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+	font-family: 'Open Sans', sans-serif;
 }
 
 #primary_nav_wrap ul li
@@ -259,6 +265,20 @@ button:focus {
   letter-spacing: 2px;
 }
 
+.shop-button-1 {
+  border-style: outset;
+  border-color: white;
+  color:white;
+  background-color: #f9d570;
+  width:150px;
+  height:40px;
+  padding: 5px 5px 5px 5px;
+  text-align:center;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .pb-button {
   border-style: outset;
   border-color: white;
@@ -310,6 +330,9 @@ html, body {
 .section {
   height: 1000px;
 }
+#section-0 {
+  background: white;
+}
 
 #section-1 {
   background: white;
@@ -328,7 +351,7 @@ html, body {
 }
 
 #section-5 {
-  background: white;
+  background: #b3b3b3;
 }
 
 #section-6 {
@@ -341,4 +364,65 @@ h1 {
 
 .section a {
   color: #3399FF;
+}
+
+/* unvisited link */
+a:link {
+    color: #c3c3c3;
+}
+
+/* visited link */
+a:visited {
+    color: #c3c3c3;
+}
+
+/* mouse over link */
+a:hover {
+    color: #f9d570;
+}
+
+/* selected link */
+a:active {
+    color: #c3c3c3;
+}
+
+html{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
+  font-size: 15px;
+}
+ul {
+  display: inline-block;
+  list-style: none;
+  position:relative;
+}
+ul:before{
+  content:"▾";
+  position:absolute;
+  right:-40px;
+  top: -1px;
+  transition: transform 0.2s linear;
+}
+ul.open:before{
+  transform: rotateX(180deg);
+}
+li{
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+ul.open li:hover{
+  text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.75);
+}
+li:not(.active) {
+  height: 0;
+  opacity: 0;
+  z-index:0;
+}
+li.active{
+  z-index:10;
+}
+ul.open li {
+  height: 30px;
+  opacity: 1;
 }
