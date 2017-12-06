@@ -1,3 +1,4 @@
+$(document).ready(function(){
 $(".js-anchor-link").click(function(e) {
   e.preventDefault();
   var target = $($(this).attr("href"));
@@ -5,4 +6,5 @@ $(".js-anchor-link").click(function(e) {
     var scrollTo = target.offset().top;
     $("body, html").animate({ scrollTop: scrollTo + "px" }, 800);
   }
+});
 });
