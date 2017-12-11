@@ -7,7 +7,7 @@
 
 .blk-box{
   border: 1px solid black;
-  width:480px;
+  width:560px;
   height:800px;
 }
 
@@ -17,16 +17,12 @@
 
 .text{
   font-size: 15px;
-  width: 400px;
   font-family: 'Open Sans', sans-serif;
   font-weight: light;
-  margin-left: 100px
 }
 
-.text-1{
-  font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: light;
+.wd500{
+  width:500px;
 }
 
 .italic{
@@ -69,6 +65,9 @@
   font-size: 30px;
   letter-spacing: 3px;
   margin-left: 100px;
+}
+
+.width8{
   width:800px;
 }
 
@@ -81,8 +80,8 @@
   margin-top: 100px;
 }
 
-.top-90{
-  margin-top: -90px;
+.top-80{
+  margin-top: -80px;
 }
 
 .top300{
@@ -101,16 +100,6 @@
   margin-bottom: 100px;
 }
 
-.leftline{
-  width: 680px;
-}
-
-.rightline{
-  width:680px;
-  margin-left: 690px;
-  margin-right: 20px;
-}
-
 .text-mt{
   margin-top: -630px;
 }
@@ -124,7 +113,7 @@
 }
 
 .mg-left2{
-  margin-left: 550px;
+  margin-left: 530px;
 }
 
 .center{
@@ -143,10 +132,6 @@
   padding-right:3px;
 }
 
-.rightmar{
-  margin-right: -480px;
-}
-
 .rightmar_2{
   margin-right: -200px;
 }
@@ -161,6 +146,10 @@
 
 .abso{
   position: absolute;
+}
+
+.rltv{
+  position:relative;
 }
 
 #primary_nav_wrap
@@ -425,4 +414,24 @@ li.active{
 ul.open li {
   height: 30px;
   opacity: 1;
+}
+
+.lh200{
+  line-height: 200px;
+}
+
+.lh30{
+  line-height: 30px;
+}
+
+.ml100{
+  margin-left: 100px;
+}
+
+.mt100{
+  margin-top: 100px;
+}
+
+.mtp{
+  margin-top: -800px;
 }
